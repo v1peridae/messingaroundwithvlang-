@@ -1,0 +1,11 @@
+set up math for creating a plane (DONE)
+have points on the plane set by the user from input....minimum 3
+have it create midpoints on the planes 
+form vertices on midpoint intersections
+have points movable
+
+
+
+modules/libs of importance :
+https://modules.vlang.io/gg.html
+https://vlang.io/pkg/math
