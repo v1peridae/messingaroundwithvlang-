@@ -1,10 +1,6 @@
 module main
 import math
 
-interface Drawable {
-	draw() void;
-}
-
 struct Point { // represents a point on a 2d plane
 	x f64
 	y f64
