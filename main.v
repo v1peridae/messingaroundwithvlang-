@@ -1,12 +1,16 @@
 module main
 import math
 
+interface Drawable {
+	draw() void;
+}
+
 struct Point { // represents a point on a 2d plane
 	x f64
 	y f64
 }
 
-struct Line { //line between 2 points on the plaen
+struct Line { //line between 2 points on the plane
 	start Point
 	end Point
 }
@@ -16,6 +20,11 @@ struct Plane { //2d coordinate system
 	height f64
 mut:
 	points []Point
+}
+
+struct Circle { // Represents a circle in a 2d coordinate grid.
+	center Point
+	radius f64
 }
 
 fn create_plane(width f64, height f64) Plane { //create a plane with a width and height
